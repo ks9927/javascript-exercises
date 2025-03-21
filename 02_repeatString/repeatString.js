@@ -6,12 +6,12 @@ const repeatString = function(string, num) {
     }
     for(i = 0; i < num; i++)
     {
-        return newString.repeat(num);
+        return newString;
     }
 };
 
 // Do this withought .repeat() method
 
-repeatString('hey', 0);
+repeatString('hey', 4);
 // Do not edit below this line
 module.exports = repeatString;
