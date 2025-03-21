@@ -1,11 +1,13 @@
 const reverseString = function(string) {
-    // Split string
+    // Split string. string turns to array of substrings
     let stringSplit = string.split("");
-    //Reverse it
+    //Reverse it using array method. still an array
     let stringReverse = stringSplit.reverse();
     //Join it back together by turning array back to string?
-    let stringJoin = stringReverse.join();
-    return stringJoin.toString();
+    // now i get the string with commas
+    let stringJoin = stringReverse.join("");
+   return stringJoin;
+
 
 };
 
