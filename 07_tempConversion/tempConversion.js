@@ -3,7 +3,8 @@ const convertToCelsius = function(ctemp) {
   //f = (x − 32) × ⁠5/9 degrees c
   //x is ctemp
   let cDegree = (ctemp - 32) * 5/9;
-  return cDegree;
+  let roundedC = Math.round(cDegree * 10) / 10;
+  return roundedC;
 };
 
 const convertToFahrenheit = function(ftemp) {
@@ -15,7 +16,7 @@ const convertToFahrenheit = function(ftemp) {
   //return fDegree;
 };
 
-convertToCelsius(32);
+convertToCelsius(100);
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
