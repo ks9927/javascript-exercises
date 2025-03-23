@@ -13,10 +13,11 @@ const convertToFahrenheit = function(ftemp) {
   //x is ftemp
 
   let fDegree = (ftemp * 9/5 + 32);
-  return fDegree;
+  let roundedF = Math.round(fDegree * 10) / 10;
+  return roundedF;
 };
 
-convertToFahrenheit(0);
+convertToFahrenheit(73.2);
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
