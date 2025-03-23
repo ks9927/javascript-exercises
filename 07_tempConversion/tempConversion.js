@@ -12,11 +12,11 @@ const convertToFahrenheit = function(ftemp) {
   //c = (x * ⁠9/5 + 32) degrees f
   //x is ftemp
 
-  //let fDegree = (fTemp * 9/5 + 32);
-  //return fDegree;
+  let fDegree = (ftemp * 9/5 + 32);
+  return fDegree;
 };
 
-convertToCelsius(100);
+convertToFahrenheit(0);
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
