@@ -1,7 +1,12 @@
 const sumAll = function(num1, num2) {
     let totalSum = 0;
 
-    if(num1 > num2)
+if(num1 < 0 || num2 < 0)
+{
+    return "ERROR";
+}
+
+else if(num1 > num2)
     {
        for(let j = num1; j > num2 - 1; j--)
        {
@@ -19,6 +24,6 @@ const sumAll = function(num1, num2) {
     return totalSum;
 };
 
-sumAll(4, 1);
+sumAll(-10, 4);
 // Do not edit below this line
 module.exports = sumAll;
